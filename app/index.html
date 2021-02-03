@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body id="home">
 
     <header class="header">
         <nav class="menu">
 
-            <a class="logo" href="#">
+            <a class="logo" href="#home">
                 <img class="logo__img" src="images/Logo.svg" alt="logo"></img>
             </a>
 
             <ul class="menu__list">
                 <li class="menu__list-item">
-                    <a class="menu__item-link" href="#">
+                    <a class="menu__item-link" href="#home">
                         Home
                     </a>
                 </li>
@@ -42,99 +42,108 @@
             </div>
         </nav>
 
-        <video class="header__video" src="videos/Nature_Intro.mp4"></video>
+       
+            <div class="video">
+                <video class="video__media" src="videos/Nature_Intro.mp4" autoplay muted loop
+                ></video>
+                <svg class="video__icon" width="100" height="100" viewBox="0 0 259 296" fill="none">
+                    <path d="M29 244V49L200 139L29 244Z" stroke="white" stroke-width="58"/>
+                </svg>
+            </div>
+        
     </header>
 
-    <main id="gall">
+    <main>
+
         <h1 class="sr-only" aria-hidden="true">empty</h1>
-            <section class="slider container" style="background-image: url(images/slider_bcg.svg);">
-                <div class="slider__item">
-                    <div class="slider__wrapper">
-                        <a class="slider__fancy-inner" href="images/slider_img.png" data-fancybox="gallery">
-                            <img class="slider__img" src="images/slider_img.png" alt="flowers">
-                        </a>
-                        <a class="slider__content" href="#">
-                            <h2 class="slider__title">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </h2>
-                            <div class="slider__text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. At gravida cursus amet quam
-                                    nulla
-                                    viverra congue suscipit volutpat. Dui facilisi dignissim quis orci, non. Fames odio
-                                    sed
-                                    gravida justo ornare. Nullam facilisis feugiat leo sed etiam duis nisl velit.
-                                    Volutpat
-                                    accumsan est enim risus fermentum cras sit mi. Natoque enim cras id pulvinar nisi,
-                                    erat
-                                    molestie id nisl. Risus pulvinar ultricies nibh in sit. Sagittis hendrerit aliquam
-                                    tellus
-                                    posuere. Scelerisque consectetur vitae volutpat ac consequat et. Purus ultricies
-                                    vulputate
-                                    sit ut elit diam.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+        <section class="slider container" id="gall" style="background-image: url(images/slider_bcg.svg);">
+            <div class="slider__item">
+                <div class="slider__wrapper">
+                    <a class="slider__fancy-inner" href="images/slider_img.png" data-fancybox="gallery">
+                        <img class="slider__img" src="images/slider_img.png" alt="flowers">
+                    </a>
+                    <a class="slider__content" href="#">
+                        <h2 class="slider__title">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                        </h2>
+                        <div class="slider__text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. At gravida cursus amet quam
+                                nulla
+                                viverra congue suscipit volutpat. Dui facilisi dignissim quis orci, non. Fames odio
+                                sed
+                                gravida justo ornare. Nullam facilisis feugiat leo sed etiam duis nisl velit.
+                                Volutpat
+                                accumsan est enim risus fermentum cras sit mi. Natoque enim cras id pulvinar nisi,
+                                erat
+                                molestie id nisl. Risus pulvinar ultricies nibh in sit. Sagittis hendrerit aliquam
+                                tellus
+                                posuere. Scelerisque consectetur vitae volutpat ac consequat et. Purus ultricies
+                                vulputate
+                                sit ut elit diam.
+                            </p>
+                        </div>
+                    </a>
                 </div>
-                <div class="slider__item">
-                    <div class="slider__wrapper">
-                        <a class="slider__fancy-inner" href="images/slider_img.png" data-fancybox="gallery">
-                            <img class="slider__img" src="images/slider_img.png" alt="flowers">
-                        </a>
-                        <a class="slider__content" href="#">
-                            <h2 class="slider__title">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </h2>
-                            <div class="slider__text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. At gravida cursus amet quam
-                                    nulla
-                                    viverra congue suscipit volutpat. Dui facilisi dignissim quis orci, non. Fames odio
-                                    sed
-                                    gravida justo ornare. Nullam facilisis feugiat leo sed etiam duis nisl velit.
-                                    Volutpat
-                                    accumsan est enim risus fermentum cras sit mi. Natoque enim cras id pulvinar nisi,
-                                    erat
-                                    molestie id nisl. Risus pulvinar ultricies nibh in sit. Sagittis hendrerit aliquam
-                                    tellus
-                                    posuere. Scelerisque consectetur vitae volutpat ac consequat et. Purus ultricies
-                                    vulputate
-                                    sit ut elit diam.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+            </div>
+            <div class="slider__item">
+                <div class="slider__wrapper">
+                    <a class="slider__fancy-inner" href="images/slider_img.png" data-fancybox="gallery">
+                        <img class="slider__img" src="images/slider_img.png" alt="flowers">
+                    </a>
+                    <a class="slider__content" href="#">
+                        <h2 class="slider__title">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                        </h2>
+                        <div class="slider__text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. At gravida cursus amet quam
+                                nulla
+                                viverra congue suscipit volutpat. Dui facilisi dignissim quis orci, non. Fames odio
+                                sed
+                                gravida justo ornare. Nullam facilisis feugiat leo sed etiam duis nisl velit.
+                                Volutpat
+                                accumsan est enim risus fermentum cras sit mi. Natoque enim cras id pulvinar nisi,
+                                erat
+                                molestie id nisl. Risus pulvinar ultricies nibh in sit. Sagittis hendrerit aliquam
+                                tellus
+                                posuere. Scelerisque consectetur vitae volutpat ac consequat et. Purus ultricies
+                                vulputate
+                                sit ut elit diam.
+                            </p>
+                        </div>
+                    </a>
                 </div>
-                <div class="slider__item">
-                    <div class="slider__wrapper">
-                        <a class="slider__fancy-inner" href="images/slider_img.png" data-fancybox="gallery">
-                            <img class="slider__img" src="images/slider_img.png" alt="flowers">
-                        </a>
-                        <a class="slider__content" href="#">
-                            <h2 class="slider__title">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </h2>
-                            <div class="slider__text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. At gravida cursus amet quam
-                                    nulla
-                                    viverra congue suscipit volutpat. Dui facilisi dignissim quis orci, non. Fames odio
-                                    sed
-                                    gravida justo ornare. Nullam facilisis feugiat leo sed etiam duis nisl velit.
-                                    Volutpat
-                                    accumsan est enim risus fermentum cras sit mi. Natoque enim cras id pulvinar nisi,
-                                    erat
-                                    molestie id nisl. Risus pulvinar ultricies nibh in sit. Sagittis hendrerit aliquam
-                                    tellus
-                                    posuere. Scelerisque consectetur vitae volutpat ac consequat et. Purus ultricies
-                                    vulputate
-                                    sit ut elit diam.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+            </div>
+            <div class="slider__item">
+                <div class="slider__wrapper">
+                    <a class="slider__fancy-inner" href="images/slider_img.png" data-fancybox="gallery">
+                        <img class="slider__img" src="images/slider_img.png" alt="flowers">
+                    </a>
+                    <a class="slider__content" href="#">
+                        <h2 class="slider__title">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                        </h2>
+                        <div class="slider__text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. At gravida cursus amet quam
+                                nulla
+                                viverra congue suscipit volutpat. Dui facilisi dignissim quis orci, non. Fames odio
+                                sed
+                                gravida justo ornare. Nullam facilisis feugiat leo sed etiam duis nisl velit.
+                                Volutpat
+                                accumsan est enim risus fermentum cras sit mi. Natoque enim cras id pulvinar nisi,
+                                erat
+                                molestie id nisl. Risus pulvinar ultricies nibh in sit. Sagittis hendrerit aliquam
+                                tellus
+                                posuere. Scelerisque consectetur vitae volutpat ac consequat et. Purus ultricies
+                                vulputate
+                                sit ut elit diam.
+                            </p>
+                        </div>
+                    </a>
                 </div>
+            </div>
         </section>
 
         <section class="blog" id="blog">

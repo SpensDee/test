@@ -8,6 +8,14 @@ body {
     @extend %Roboto-400;
 }
 
+main {
+    margin-left: 140px;
+}
+
+.disabled {
+    display: none;
+}
+
 .container {
     max-width: 1630px;
     margin: 0 auto;

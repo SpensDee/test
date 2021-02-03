@@ -14,7 +14,13 @@ $(function(){
         infinite: true,
         pauseOnHover: true
     });
-
+    
+    $('.video__icon').on('click', function() {
+      $('.video__media')[0].controls = true;
+      $('.video__media')[0].muted = false;
+      $('.video__media')[0].volume = 1;
+      $('.video__icon').addClass('disabled');
+    });
 });
 
 

@@ -6,15 +6,41 @@
 
 .header {
     display: flex;
+    overflow: hidden;
 
     &__text {
         font-size: 12px;
         line-height: 1.5;
     }
 
-    &__video {
-        width: calc(100% - 140px);
+}
+
+.video {
+
+    min-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+
+    &__media {
+        min-width: 100%;
         height: auto;
+        z-index: 8;
+        padding-left: 140px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 40%;
+        right: 45%;
+        z-index: 10;
+        transition: opacity 0.4s, transform 0.4s;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.5;
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -26,6 +52,12 @@
     max-width: 140px;
     background-color: $accent;
     color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    max-height: 100vh;
+    z-index: 9;
 
     &__list {
 
@@ -151,6 +183,12 @@
         margin-bottom: 80px;
     }
 
+    &__text {
+        max-height: 100px;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -160,10 +198,16 @@
         &-item {
             max-height: 411px;
             max-width: 505px;
-            flex: none;
             margin-bottom: 40px;
             position: relative;
         }
+    }
+
+    &__img {
+        width: 507px;
+        height: 236px;
+        overflow: hidden;
+        object-fit: cover;
     }
 
     &__item-link {
@@ -188,8 +232,6 @@
         }
     }
 
-
-
     &__img-wrapper {
         overflow: hidden;
         border-radius: 20px;
@@ -210,8 +252,6 @@
         @extend %Roboto-700;
         margin-bottom: 15px;
     }
-
-
 }
 
 
